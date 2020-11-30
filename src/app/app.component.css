@@ -1,0 +1,10 @@
+nav > span {
+    padding-right: 20px;
+}
+
+nav {
+    background-color: aquamarine;
+    min-height: 30px;
+    font-size: large;
+}
+

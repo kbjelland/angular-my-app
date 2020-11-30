@@ -1,0 +1,24 @@
+<h3>Game of Thrones Character Search</h3>
+<div>
+    <input class="search" type="text" [(ngModel)]="characterSearch"><br>
+</div>
+<div>
+    <input *ngFor="let searchType of searchTypes, index as i" type="button" (click)="search(i)"
+        value="Search by {{searchType}}">
+</div>
+<hr>
+<h4 *ngIf="character">{{safeString(character.name)}}</h4>
+<div *ngIf="character">
+    <input *ngFor="let info of infoDisplays, index as i" type="button" (click)="setState(i)" value="{{info.type}}">
+</div>
+<hr>
+<div [ngSwitch]="state" *ngIf="character">
+    <div *ngFor="let info of infoDisplays, index as i">
+        <div *ngSwitchCase="i" class="info">
+            <h4>{{info.type}}</h4>
+            <ul>
+                <li *ngFor="let datum of info.display(character)">{{datum}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

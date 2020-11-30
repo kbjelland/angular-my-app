@@ -1,0 +1,22 @@
+* {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 40%;
+}
+
+ul {
+    display: block;
+    padding-inline-start: 0;
+}
+
+input[type="button"] {
+    margin: 2%;
+}
+
+.info {
+    display: block;
+    color: red;
+}

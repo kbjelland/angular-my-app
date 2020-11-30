@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("https://traveladestatic.imgix.net/media/image/game-of-thrones-iceland_UCcbF3e.jpg?auto=format&crop=fit&fit=crop&h=504&w=1000&q=55&auto=format");
+    background-size: cover;
+}
